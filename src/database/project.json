@@ -1,0 +1,11 @@
+[
+    {
+      "title": "Croma",
+      "onlinelink": "https://cromas.netlify.app/",
+      "photo": "croma", 
+      "githublink": "https://github.com/Itmesaroj/Croma",
+      "description": "This project is a full-stack MERN application that replicates the Croma.com e-commerce website. It features user authentication, product management, shopping cart functionality, and a responsive design.",
+      "stack":["React","Chakra","MongoDB","Node","express"]
+    }
+  ]
+  
