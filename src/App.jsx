@@ -9,7 +9,7 @@ import "aos/dist/aos.css"
 import Skills from './component/Skills';
 import Project from './component/Project';
 import { ContactUs } from './component/Contect';
-import Fotter from './component/fotter';
+import Fotter from './component/Fotter';
 function App() {
   useEffect(()=>{
 Aos.init()
