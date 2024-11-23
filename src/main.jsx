@@ -7,11 +7,9 @@ import { ChakraProvider } from '@chakra-ui/react'
 
 createRoot(document.getElementById('root')).render(
   <ChakraProvider>
- <ThemeToggleProvider>
-  <App />
-
+  <ThemeToggleProvider>
+    <App />
   </ThemeToggleProvider>
-  </ChakraProvider>
- 
+</ChakraProvider>
   
 )
