@@ -1,20 +1,20 @@
-import { createContext, useState } from "react";
+// import { createContext, useState } from "react";
 
-const ThemeContext = createContext();
+// const ThemeContext = createContext();
 
-export function ThemeToggleProvider({ children }) {
-    const [dark, setDark] = useState(false);
+// export function ThemeToggleProvider({ children }) {
+//     const [dark, setDark] = useState(false);
 
   
-    function toggle() {
-        setDark(prevDark => !prevDark);
-    }
+//     function toggle() {
+//         setDark(prevDark => !prevDark);
+//     }
 
-    return (
-        <ThemeContext.Provider value={{ dark, setDark, toggle }}>
-            {children}
-        </ThemeContext.Provider>
-    );
-}
+//     return (
+//         <ThemeContext.Provider value={{ dark, setDark, toggle }}>
+//             {children}
+//         </ThemeContext.Provider>
+//     );
+// }
 
-export default ThemeContext;
+// export default ThemeContext;

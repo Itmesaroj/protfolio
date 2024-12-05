@@ -6,10 +6,11 @@ import  {ThemeToggleProvider}  from './Context/themeContext.jsx'
 import { ChakraProvider } from '@chakra-ui/react'
 
 createRoot(document.getElementById('root')).render(
+  <ThemeToggleProvider>
   <ChakraProvider>
-  
-    <App />
- 
+   
+      <App />
+   
 </ChakraProvider>
-  
+</ThemeToggleProvider>
 )
