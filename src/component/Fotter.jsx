@@ -9,7 +9,7 @@ function Fotter() {
       backgroundColor: dark ? '#11001F' : 'white',
     }  
   return (
-    <>
+    <div>
      <div className="contact-email" id={dark?"":"light-border"} style={Style} data-aos="zoom-in-up" data-aos-duration="1000">
       <h1 style={Style}>saroj <span className="logo-cricel"></span></h1>
       <p style={Style}><MdEmail style={{Style,display:'inline-block'}}/>itsmesaroj007@gmail.com</p>
@@ -24,7 +24,7 @@ function Fotter() {
         <a href="https://www.linkedin.com/in/saroj-choudhary-0021682a9/" target='_blank'>LinkedIn</a>
       </div>
     </div>
-    </>
+    </div>
   )
 }
 

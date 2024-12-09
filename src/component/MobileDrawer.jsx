@@ -29,7 +29,7 @@ function MobileDrawer({ Style }) {
   };
 
   return (
-      <>
+      <div>
           <Button ref={btnRef} style={Style} onClick={onOpen} border={"none"} textDecoration={"none"}>
               <AiOutlineMenuFold className='drawer-open-btn'/>
           </Button>
@@ -62,7 +62,7 @@ function MobileDrawer({ Style }) {
                   </DrawerBody>
               </DrawerContent>
           </Drawer>
-      </>
+      </div>
   );
 }
 
