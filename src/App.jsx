@@ -23,7 +23,7 @@ Aos.init()
   return(
     <>
     <Navbar/>
-    
+    <div className="main-conatiner" style={Style}>
       <Home/>
       <br />
       <About/>
@@ -35,7 +35,7 @@ Aos.init()
     <ContactUs/>
     <br />
     <Fotter/>
-   
+    </div>
     </>
   )
 }
