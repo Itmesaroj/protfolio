@@ -33,7 +33,7 @@ function Home() {
         </a>
        
         <div className="btn-home" id="btn-resume" style={{border:dark?"":"1px solid rgb(76, 76, 76)"}}>
-        <a href="file:///C:/Users/Pukhraj/Downloads/SarojChoudhary-FullStackWebDeveloper-fo0y.pdf" download style={Style}>
+        <a href="https://drive.google.com/file/d/1mw9WhoQbZ9aZmEgJOsgwOtqhVU7LX0VY/view?usp=drive_link" download style={Style}>
     my resume <FaDownload style={{display:"inline-block"}} />
   </a>
         </div>
