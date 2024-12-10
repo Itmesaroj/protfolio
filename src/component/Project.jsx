@@ -41,13 +41,11 @@ const images = {
 function Project() {
   const { dark } = useContext(ThemeContext);
 
-  // Define tooltip styles based on the mode
   const tooltipStyles = {
     color: dark ? 'black' : 'white',
     bg: dark ? 'white' : 'black',
   };
 
-  // Define general styles based on the mode
   const style = {
     color: dark ? 'white' : 'RGB(0, 0, 0)',
     backgroundColor: dark ? '#11001F' : 'white',
@@ -62,7 +60,12 @@ function Project() {
       <div className="project-section-btm">
         {project.length > 0 ? (
           project.map((proj, index) => (
-            <div className={`project-box ${dark ? "project-dark-box" : "project-light-box"}`} key={index} data-aos="zoom-in-up" data-aos-duration="1000">
+            <div 
+              className={`project-box ${dark ? "project-dark-box" : "project-light-box"}`} 
+              key={proj.id || proj.title || index} 
+              data-aos="zoom-in-up" 
+              data-aos-duration="1000"
+            >
               <div className="project-left-top">
                 {images[proj.photo] ? (
                   <img
@@ -77,22 +80,22 @@ function Project() {
                 )}
               </div>
 
-              <div className={`project-box-right ${dark ? "project-dark-box-right" : "project-light-box-right"}`} >
+              <div className={`project-box-right ${dark ? "project-dark-box-right" : "project-light-box-right"}`}>
                 <h4 className={`project-title ${dark ? "title-dark" : "title-light"}`}>{proj.title}</h4>
                 <p className="project-desc">{proj.description}</p>
 
                 {/* Stack Icons */}
                 <div className="stack-icons">
                   {proj.stack.map((tech, techIndex) => (
-                    <Tooltip 
-                      key={techIndex} 
-                      hasArrow 
-                      label={tech} 
-                      aria-label='A tooltip' 
-                      color={tooltipStyles.color} 
-                      bg={tooltipStyles.bg} 
-                      padding=".5rem" 
-                      borderRadius="10px" 
+                    <Tooltip
+                      key={`${proj.id || proj.title}-${techIndex}`} 
+                      hasArrow
+                      label={tech}
+                      aria-label="A tooltip"
+                      color={tooltipStyles.color}
+                      bg={tooltipStyles.bg}
+                      padding=".5rem"
+                      borderRadius="10px"
                     >
                       <div className={`image-stack ${dark ? "dark-image-icon" : ""}`}>
                         <img
@@ -111,46 +114,44 @@ function Project() {
               <div className="hover-live-class">
                 <div className="links-project">
                   {proj.githublink && (
-                   
-                      <Tooltip 
-                        key={index}
-                        hasArrow 
-                        label="GitHub link"
-                        aria-label='A tooltip' 
-                        color={tooltipStyles.color} 
-                        bg={tooltipStyles.bg} 
-                        padding=".5rem" 
-                        borderRadius="10px" 
-                      >  <a
-                      href={proj.githublink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="project-git-hub-link"
+                    <Tooltip
+                      hasArrow
+                      label="GitHub link"
+                      aria-label="A tooltip"
+                      color={tooltipStyles.color}
+                      bg={tooltipStyles.bg}
+                      padding=".5rem"
+                      borderRadius="10px"
                     >
-                        <FaGithub style={{ borderRadius: "50%" }} /></a>
-                      </Tooltip>
-                    
+                      <a
+                        href={proj.githublink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="project-git-hub-link"
+                      >
+                        <FaGithub style={{ borderRadius: "50%" }} />
+                      </a>
+                    </Tooltip>
                   )}
                   {proj.onlinelink && (
-                  
-                      <Tooltip 
-                        key={index}
-                        hasArrow 
-                        label="Live link"
-                        aria-label='A tooltip' 
-                        color={tooltipStyles.color} 
-                        bg={tooltipStyles.bg} 
-                        padding=".5rem" 
-                        borderRadius="10px" 
-                      >  <a
-                      href={proj.onlinelink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="project-live-link project-git-hub-link"
+                    <Tooltip
+                      hasArrow
+                      label="Live link"
+                      aria-label="A tooltip"
+                      color={tooltipStyles.color}
+                      bg={tooltipStyles.bg}
+                      padding=".5rem"
+                      borderRadius="10px"
                     >
-                        <IoLogOut style={{ borderRadius: "50%" }} /> </a>
-                      </Tooltip>
-                   
+                      <a
+                        href={proj.onlinelink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="project-live-link project-git-hub-link"
+                      >
+                        <IoLogOut style={{ borderRadius: "50%" }} />
+                      </a>
+                    </Tooltip>
                   )}
                 </div>
               </div>
