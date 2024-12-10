@@ -37,11 +37,10 @@ function Home() {
           id="btn-resume"
           style={{ border: dark ? "" : "1px solid rgb(76, 76, 76)" }}
         >
-          <a
-            href="https://drive.google.com/file/d/1mw9WhoQbZ9aZmEgJOsgwOtqhVU7LX0VY/view?usp=drive_link"
-            target="_blank"
-            rel="noopener noreferrer"
+            <a
+            href="https://drive.google.com/uc?id=1mw9WhoQbZ9aZmEgJOsgwOtqhVU7LX0VY&export=download"
             style={Style}
+            download
           >
             My Resume <FaDownload style={{ display: "inline-block" }} />
           </a>
