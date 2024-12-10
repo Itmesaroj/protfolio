@@ -50,7 +50,7 @@ export const ContactUs = () => {
   };
 
   return (
-    <div>
+    <>
     <div className="ContactUs-container"  id="contact" style={Style}   data-aos="zoom-in-up" data-aos-duration="1000">
       <div className="top-contact-us" style={Style}  data-aos="zoom-in-up" data-aos-duration="1000">
         <p style={Style}  data-aos="zoom-in-up" data-aos-duration="1000">Connect with me</p>
@@ -76,6 +76,6 @@ export const ContactUs = () => {
     </div>
 
    
-    </div>
+    </>
   );
 };
