@@ -55,7 +55,7 @@ export const ContactUs = () => {
       <div className="top-contact-us" style={Style}  data-aos="zoom-in-up" data-aos-duration="1000">
         <p style={Style}  data-aos="zoom-in-up" data-aos-duration="1000">Connect with me</p>
         <h2 className='contact-title' style={Style}  data-aos="zoom-in-up" data-aos-duration="1000" >Get in touch</h2>
-        <p  data-aos="zoom-in-up" data-aos-duration="1000" style={Style}>I'd love to hear from you! If you have any questions, comments or feedback, please use the form below.</p>
+        <p  data-aos="zoom-in-up" data-aos-duration="1000" style={{ textAlign: "center", ...Style }} >I'd love to hear from you! If you have any questions, comments or feedback, please use the form below.</p>
       </div>
       <div className="btm-contact-us" style={Style}>
         <form ref={form} onSubmit={sendEmail} style={Style}>
