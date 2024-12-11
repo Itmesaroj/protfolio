@@ -15,7 +15,7 @@
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
     "aos": "^2.3.4",
-    "framer-motion": "^11.5.4",
+    "framer-motion": "^11.11.17",
     "i": "^0.3.7",
     "npm": "^10.8.3",
     "react": "^18.3.1",
