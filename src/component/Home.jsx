@@ -50,8 +50,9 @@ function Home() {
             id="resume-link"
             href="https://resume-builder-test-new.masaischool.com/resume/public?resumeId=67a356d5e7c615add17a8358"
             style={Style}
-            download
+            
             target="_blank"
+            download
           >
             My Resume <FaDownload style={{ display: "inline-block" }} />
           </a>
