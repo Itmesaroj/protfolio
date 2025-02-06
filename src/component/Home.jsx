@@ -11,7 +11,7 @@ function Home() {
     backgroundColor: dark ? '#11001F' : 'white',
   };
 
-  const resumeLinkRef = useRef("https://resume-builder-test-new.masaischool.com/resume/public?resumeId=67a356d5e7c615add17a8358"); // Create a ref for the resume link
+  const resumeLinkRef = useRef(null); // Create a ref for the anchor tag
 
   useEffect(() => {
     // Trigger download on component mount
@@ -48,7 +48,7 @@ function Home() {
           style={{ border: dark ? "" : "1px solid rgb(76, 76, 76)" }}
         >
           <a
-            ref={resumeLinkRef} // Set the ref to the link
+            ref={resumeLinkRef} // Set the ref to the anchor tag
             href="https://resume-builder-test-new.masaischool.com/resume/public?resumeId=67a356d5e7c615add17a8358"
             style={Style}
             download
