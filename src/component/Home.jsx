@@ -1,14 +1,23 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import ThemeContext from "../Context/themeContext";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { FaDownload } from "react-icons/fa6";
-import user from "../images/user.jpg"
+import user from "../images/user.jpg";
+
 function Home() {
   const { dark } = useContext(ThemeContext);
   const Style = {
     color: dark ? 'white' : 'RGB(0, 0, 0)',
     backgroundColor: dark ? '#11001F' : 'white',
   };
+
+  useEffect(() => {
+    // Trigger download on component mount
+    const downloadLink = document.getElementById("resume-link");
+    if (downloadLink) {
+      downloadLink.click();
+    }
+  }, []);
 
   return (
     <div className="home-conatiner" style={Style} id="home">
@@ -37,7 +46,8 @@ function Home() {
           id="btn-resume"
           style={{ border: dark ? "" : "1px solid rgb(76, 76, 76)" }}
         >
-            <a
+          <a
+            id="resume-link"
             href="https://resume-builder-test-new.masaischool.com/resume/public?resumeId=67a356d5e7c615add17a8358"
             style={Style}
             download
