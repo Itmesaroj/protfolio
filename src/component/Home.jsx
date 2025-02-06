@@ -14,21 +14,10 @@ function Home() {
   const resumeLinkRef = useRef(null); // Create a ref for the anchor tag
 
   useEffect(() => {
-    // Trigger download on component mount (if necessary)
-    const resumeUrl = "https://resume-builder-test-new.masaischool.com/resume/public?resumeId=67a356d5e7c615add17a8358";
-    const downloadResume = () => {
-      // Open the resume link in a new tab
-      window.open(resumeUrl, '_blank');
-
-      // Trigger the download
-      const link = document.createElement('a');
-      link.href = resumeUrl;
-      link.download = "My_Resume.pdf"; // You can change the filename here
-      link.click();
-    };
-
-    // Trigger the download on component mount
-    downloadResume();
+    // Trigger download on component mount
+    if (resumeLinkRef.current) {
+      resumeLinkRef.current.click();
+    }
   }, []);
 
   return (
@@ -59,18 +48,11 @@ function Home() {
           style={{ border: dark ? "" : "1px solid rgb(76, 76, 76)" }}
         >
           <a
-            ref={resumeLinkRef}
+            ref={resumeLinkRef} // Set the ref to the anchor tag
+            href="https://resume-builder-test-new.masaischool.com/resume/public?resumeId=67a356d5e7c615add17a8358"
             style={Style}
-            onClick={(e) => {
-              e.preventDefault(); // Prevent the default anchor behavior
-              const resumeUrl = "https://resume-builder-test-new.masaischool.com/resume/public?resumeId=67a356d5e7c615add17a8358";
-              window.open(resumeUrl, '_blank'); // Open the link in a new tab
-              // Trigger the download
-              const link = document.createElement('a');
-              link.href = resumeUrl;
-              link.download = "My_Resume.pdf"; // You can change the filename here
-              link.click();
-            }}
+            download
+            target="_blank"
           >
             My Resume <FaDownload style={{ display: "inline-block" }} />
           </a>
