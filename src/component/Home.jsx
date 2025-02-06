@@ -38,7 +38,7 @@ function Home() {
           style={{ border: dark ? "" : "1px solid rgb(76, 76, 76)" }}
         >
             <a
-            href="https://drive.google.com/uc?id=1mw9WhoQbZ9aZmEgJOsgwOtqhVU7LX0VY&export=download"
+            href="https://resume-builder-test-new.masaischool.com/resume/public?resumeId=67a356d5e7c615add17a8358"
             style={Style}
             download
           >
