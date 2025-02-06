@@ -6,6 +6,14 @@
       "githublink": "https://github.com/Itmesaroj/Croma",
       "description": "This project is a full-stack MERN application that replicates the Croma.com e-commerce website. It features user authentication, product management, shopping cart functionality, and a responsive design.",
       "stack":["React","Chakra","MongoDB","Node","express"]
+    },
+    {
+      "title": "TATA 1mg",
+      "onlinelink": "https://1m-tata.netlify.app/",
+      "photo": "Tata", 
+      "githublink": "https://github.com/Itmesaroj/Project",
+      "description": "1m-tata.netlify.app is a clone of the Tata 1mg website, developed as a full-stack application to mimic the functionalities of the popular e-commerce platform. The project was developed over a span of 5 days as an individual effort, utilizing a modern tech stack and focusing on key features such as authentication, dynamic content creation, and responsive design.",
+      "stack":["React","Redux"]
     }
   ]
   
