@@ -2,7 +2,7 @@ import { useContext } from "react";
 import ThemeContext from "../Context/themeContext";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { FaDownload } from "react-icons/fa6";
-
+import user from "../images/user.jpg"
 function Home() {
   const { dark } = useContext(ThemeContext);
   const Style = {
@@ -13,7 +13,7 @@ function Home() {
   return (
     <div className="home-conatiner" style={Style} id="home">
       <div className="image-conatiner">
-        <img src="https://elianajade.com/assets/profile-img-B51wlMEV.png" alt="" />
+        <img src={user} alt="" />
         <p className="name-content">Hii, I'm Saroj Choudhary</p>
       </div>
 
