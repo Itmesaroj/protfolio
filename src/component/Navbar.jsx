@@ -47,7 +47,7 @@ function Navbar() {
             style={Style}
         >
             <div className="logo" style={Style}>
-                <a href="/"> <h2 className="logo-title">sraoj <span className="logo-cricel"></span></h2></a>
+                <a href="/"> <h2 className="logo-title">saroj <span className="logo-cricel"></span></h2></a>
                
             </div>
 
