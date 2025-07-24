@@ -18,6 +18,7 @@ import { Tooltip } from '@chakra-ui/react';
 import { FaGithub } from "react-icons/fa";
 import { IoLogOut } from "react-icons/io5";
 import Tata from "../images/project/TaTa.png"
+import jobportal from "../images/project/jobportal.png"
 // Create a mapping for technology stack images
 const techIcons = {
   HTML: HTML_icon,
@@ -36,7 +37,8 @@ const techIcons = {
 
 const images = {
   croma: cromaImage,
-  Tata:Tata
+  Tata:Tata,
+  jobportal:jobportal
 };
 
 function Project() {

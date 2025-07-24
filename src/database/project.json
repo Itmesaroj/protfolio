@@ -21,6 +21,6 @@
     "photo": "jobportal",
     "githublink": "https://github.com/Itmesaroj/job-portal-frontend",
     "description": "This project is a full-stack MERN Job Portal that allows job seekers and employers to interact. Features include user authentication, job posting, application tracking, newsletter automation, and admin controls. Deployed on Render and Netlify.",
-    "stack": ["React", "Redux Toolkit", "Node.js", "Express", "MongoDB", "Cloudinary", "Netlify", "Render"]
+    "stack": ["React", "Redux", "Node.js", "Express", "MongoDB"]
   }
 ]
